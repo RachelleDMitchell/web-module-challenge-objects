@@ -68,7 +68,11 @@ console.log(reviews[5])
 console.log(reviews.push({name: "Rachelle", rating: 5, feedback: "Absolutely loved the place! It has such a great vibe and the people are so friendly!"}))
 
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, 
-great for getting work done on weekdays"
+great for getting work done on weekdays"*/
+
+objIndex = reviews.findIndex((obj => obj.feedback == 7));
+reviews[objIndex].feedback = "this place is chill with really cool people, great for getting work done on weekdays"
+console.log(reviews[objIndex])
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
@@ -107,7 +111,7 @@ function getLastReview(/* code here */) {
   function getLastReview(array, index) {
     return (`{name} gave the restaurant a {rating}, and their feedback was: {feedback}`)
   } 
-console.log(getLastReview(reviews, [5]))
+console.log(getLastReview(reviews, [5]))  
 
  
   
