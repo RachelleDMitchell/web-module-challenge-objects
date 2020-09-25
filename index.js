@@ -30,7 +30,11 @@ console.log(createMenuItem())
 
 /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
 
+console.log(createMenuItem("sandwich", 5, "lunch"))
 
+console.log(createMenuItem("pretzel", 3, "snacks"))
+
+console.log(createMenuItem("americano", 6, "Drinks"))
 
 /* Task 2: You're having a lunch special! 25% off for teachers and students, 10% off for everyone else.
  Add a method to your burger object that automatically calculates price given a string as a parameter. 
