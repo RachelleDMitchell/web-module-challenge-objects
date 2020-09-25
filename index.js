@@ -86,6 +86,10 @@ and should return a string in the format `{name} gave the restaurant a {rating},
 function getReviewByIndex(reviews, index) {
     /* code here */
   }
+  function getReviewByIndex(reviews, index) {
+    return `{name} gave the restaurant a {rating}, and their feedback was: {feedback}`
+  }
+  console.log(getReviewByIndex(reviews, [7]));
   
 
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
