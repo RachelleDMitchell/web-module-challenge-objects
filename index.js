@@ -83,13 +83,11 @@ and should return a string in the format `{name} gave the restaurant a {rating},
  * it will return `Daniela gave the restaurant a 5 star review and their feedback was: Beautiful atmosphere
  *  and wonderful vegan options!`
 */
-function getReviewByIndex(reviews, index) {
-    /* code here */
-  }
+
   function getReviewByIndex(reviews, index) {
-    return `{name} gave the restaurant a {rating}, and their feedback was: {feedback}`
+    return `${this.name} gave the restaurant a ${this.rating}, and their feedback was: ${this.feedback}`
   }
-  console.log(getReviewByIndex(reviews, [7]));
+  console.log(getReviewByIndex(reviews, [5]));
   
 
 /* Task 7: Write a function to get information about the most recent review called `getLastReview`
@@ -106,6 +104,13 @@ For example, if getLastReview is invoked passing the reviews array it will retur
 function getLastReview(/* code here */) {
     /* code here */
   } 
+  function getLastReview(array, index) {
+    return (`{name} gave the restaurant a {rating}, and their feedback was: {feedback}`)
+  } 
+console.log(getLastReview(reviews, [5]))
+
+ 
+  
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
